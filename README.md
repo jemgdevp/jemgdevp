@@ -43,24 +43,6 @@ Soy **Juan Esteban (jemg)** — Desarrollador Fullstack apasionado por construir
 
 ---
 
-## 📊 Estadísticas de GitHub
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=thisfeeling&show_icons=true&theme=merko&hide_border=true&locale=es&custom_title=Estadísticas%20de%20GitHub&rank_icon=github" alt="Estadísticas GitHub" />
-  <br/><br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=thisfeeling&layout=compact&theme=merko&hide_border=true&locale=es" alt="Lenguajes más usados" />
-</div>
-
----
-
-## 📈 Actividad
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=thisfeeling&theme=merko&hide_border=true&area=true&custom_title=Evoluci%C3%B3n%20de%20commits" alt="Gráfico de actividad de commits" />
-</div>
-
----
-
 ## 💼 Experiencia destacada
 
 **Desarrollador Fullstack — Diversotex**  
