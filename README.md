@@ -1,11 +1,10 @@
 <div align="center">
   <h1>👋 Juan Esteban "jemg" Manrique Giraldo</h1>
-  <h3>💻 Desarrollador Fullstack · Vue · Laravel · Docker</h3>
 
   <p>
-    <img src="https://komarev.com/ghpvc/?username=thisfeeling&label=Visitas&color=f0db4f&style=flat-square" alt="Visitas al perfil" />
-    <img src="https://img.shields.io/github/followers/thisfeeling?label=Seguidores&style=flat-square&color=f0db4f" alt="Seguidores" />
-    <img src="https://img.shields.io/github/stars/thisfeeling?label=Estrellas&style=flat-square&color=f0db4f" alt="Estrellas" />
+    <img src="https://komarev.com/ghpvc/?username=jemgdevp&label=Visitas&color=f0db4f&style=flat-square" alt="Visitas al perfil" />
+    <img src="https://img.shields.io/github/followers/jemgdevp?label=Seguidores&style=flat-square&color=f0db4f" alt="Seguidores" />
+    <img src="https://img.shields.io/github/stars/jemgdevp?label=Estrellas&style=flat-square&color=f0db4f" alt="Estrellas" />
   </p>
 
   <p>
@@ -17,7 +16,7 @@
 
 ## 🔭 Sobre mí
 
-Soy **Juan Esteban (jemg)** — Desarrollador Fullstack apasionado por construir aplicaciones web y móviles escalables, limpias y centradas en la experiencia de usuario. Me enfoco en arquitecturas mantenibles y despliegues reproducibles.
+Soy **Juan Esteban M (jemg)** — Desarrollador y programador apasionado y entusiasmado por construir aplicaciones escalables, y enseñar como hacerlas, no unicamente aplicaciones si no proyectos enteros.
 
 ---
 
@@ -27,7 +26,7 @@ Soy **Juan Esteban (jemg)** — Desarrollador Fullstack apasionado por construir
 
   <!-- Principales -->
   <h4>⚙️ Tecnologías principales</h4>
-  <img src="https://skillicons.dev/icons?i=vue,laravel,docker,php,mysql,ts,js,tailwind,vite,redis,git,github,vscode,capacitor" alt="Tecnologías principales" />
+  <img src="https://skillicons.dev/icons?i=vue,laravel,docker,php,ts,js,rust,python,java,c,tailwind,vite,mysql,postgresql,redis,git,github,vscode,capacitor" alt="Tecnologías principales" />
   <br/><br/>
 
   <!-- Tools badges -->
