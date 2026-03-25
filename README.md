@@ -30,15 +30,16 @@ Soy **Juan Esteban (jemg)** — Desarrollador Fullstack apasionado por construir
   <img src="https://skillicons.dev/icons?i=vue,laravel,docker,php,mysql,ts,js,tailwind,vite,redis,git,github,vscode,capacitor" alt="Tecnologías principales" />
   <br/><br/>
 
-  <!-- Más badges -->
-  <img src="https://img.shields.io/badge/Vue.js-42B883?style=for-the-badge&logo=vue.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-f7f7f7?style=for-the-badge&logo=mysql&logoColor=blue" />
-  <img src="https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-2f74c0?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <!-- Tools badges -->
+  <h4>⚙️ Mis herramientas principales</h4>
+  <img src="https://img.shields.io/badge/Linux-000000?style=for-the-badge&logo=linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Coolify-6d28d9?style=for-the-badge&logo=coolify&logoColor=white" />
+  <img src="https://img.shields.io/badge/Dokploy-000000?style=for-the-badge&logo=dokploy&logoColor=white" />
+  <img src="https://img.shields.io/badge/NeoVim-5D4037?style=for-the-badge&logo=neovim&logoColor=white" />
+  <img src="https://img.shields.io/badge/Ghostty-FFFFFF?style=for-the-badge&logo=ghostty&logoColor=black" />
+  <img src="https://img.shields.io/badge/Postman-FFFFFF?style=for-the-badge&logo=postman&logoColor=orange" />
+  <img src="https://img.shields.io/badge/Obsidian-000000?style=for-the-badge&logo=obsidian&logoColor=violet" />
+  <img src="https://img.shields.io/badge/OmarchyOS-141b1e?style=for-the-badge&logo=omarchy&logoColor=green" />
 </div>
 
 ---
@@ -47,7 +48,7 @@ Soy **Juan Esteban (jemg)** — Desarrollador Fullstack apasionado por construir
 
 **Desarrollador Fullstack — Diversotex**  
 *Septiembre 2025 – Actualidad*  
-- Desarrollo de aplicación web para empresa del sector textil usando **Vue 3** y **Laravel**.  
+- Desarrollo de aplicación web para empresa del sector textil usando **Vue 3** y **Laravel 12**.  
 - Integración con bases de datos (MySQL/MariaDB) y cacheo con **Redis**.  
 - Automatización de despliegues con **Docker** y pipelines de CI/CD.  
 
@@ -63,7 +64,7 @@ Soy **Juan Esteban (jemg)** — Desarrollador Fullstack apasionado por construir
 ## 📬 Contacto
 
 <div align="center">
-  <a href="https://github.com/thisfeeling" title="GitHub">
+  <a href="https://github.com/jemgdevp" title="GitHub">
     <img src="https://skillicons.dev/icons?i=github" width="28" height="28" alt="GitHub"/>
   </a>
   &nbsp;&nbsp;
