@@ -312,11 +312,21 @@ def revisar(raiz: Path, piso_dias: int) -> dict:
     return informe
 
 
-def hay_hallazgos(informe: dict) -> bool:
+def hay_hallazgos(informe: dict, estricto: bool = False) -> bool:
+    """En modo estricto, no haber podido mirar TAMBIÉN es un hallazgo.
+
+    Sin esto, un CI sin `pnpm` en la imagen devuelve 0 y el pipeline pasa en
+    verde sin haber revisado nada. Es el falso verde clásico: el auditor
+    ausente no es un repo limpio.
+    """
     for eco in informe["ecosistemas"]:
         if eco["auditor_disponible"] and eco["vulnerabilidades"] != "limpio":
             return True
         if eco["recien_publicadas"]:
+            return True
+        if estricto and not eco["auditor_disponible"]:
+            return True
+        if estricto and eco["directas_revisadas"] == 0:
             return True
     return False
 
@@ -387,6 +397,26 @@ def autotest() -> int:
         print("✗ (una fecha rota se está tratando como válida)")
         fallos.append("una fecha ilegible debe devolver None")
 
+    # El falso verde que --estricto existe para tapar: un CI sin el auditor en
+    # la imagen no revisa nada y, sin el flag, devolvería 0.
+    ciego = {
+        "ecosistemas": [
+            {
+                "nombre": "npm",
+                "auditor_disponible": False,
+                "vulnerabilidades": "auditor no instalado: pnpm",
+                "recien_publicadas": [],
+                "directas_revisadas": 0,
+            }
+        ]
+    }
+    print("  auditor ausente       → ", end="")
+    if not hay_hallazgos(ciego, estricto=False) and hay_hallazgos(ciego, estricto=True):
+        print("permisivo PASA · --estricto FALLA ✓ (correcto)")
+    else:
+        print("✗ (el modo estricto no está tapando el falso verde)")
+        fallos.append("con --estricto, un auditor ausente debe ser hallazgo")
+
     # El camino HTTP de verdad, contra una versión que ya no va a cambiar.
     print("  registro npm en vivo  → ", end="")
     fecha = fecha_npm("axios", "1.0.0")
@@ -419,6 +449,11 @@ def main() -> int:
         help=f"piso de edad en días (por defecto: {PISO_DIAS_POR_DEFECTO})",
     )
     ap.add_argument("--json", action="store_true", help="salida JSON")
+    ap.add_argument(
+        "--estricto",
+        action="store_true",
+        help="un auditor ausente o cero directas también cuenta como hallazgo (para CI)",
+    )
     ap.add_argument("--autotest", action="store_true", help="prueba el propio revisor")
     args = ap.parse_args()
 
@@ -437,7 +472,7 @@ def main() -> int:
     else:
         pintar(informe)
 
-    if hay_hallazgos(informe):
+    if hay_hallazgos(informe, args.estricto):
         if not args.json:
             print("\nHAY HALLAZGOS — esto no sube a producción sin mirarlo.")
         return 1

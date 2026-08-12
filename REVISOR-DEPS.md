@@ -7,12 +7,36 @@ Dependabot, apagado a propósito en todos los repos el **12ago2026**.
 ./revisor-deps.py                 # revisa el repo del directorio actual
 ./revisor-deps.py ~/Dev/node/peer # o el que le digas
 ./revisor-deps.py --dias 14       # piso de edad más estricto
+./revisor-deps.py --estricto      # para CI: no haber podido mirar TAMBIÉN falla
 ./revisor-deps.py --json          # para máquinas
 ./revisor-deps.py --autotest      # se prueba a sí mismo
 ```
 
 Salida: `0` sin hallazgos · `1` con hallazgos · `2` error. Sirve tal cual como paso de
 un pipeline de release.
+
+**`--estricto` no es opcional en CI.** Sin él, una imagen sin `pnpm` hace que el revisor
+diga «SIN revisar» y devuelva `0`: el pipeline pasa en verde **sin haber mirado nada**.
+Con `--estricto`, un auditor ausente o un ecosistema detectado con cero dependencias
+leídas cuentan como hallazgo y el pipeline se pone rojo. En local, sin el flag, se
+comporta como un aviso.
+
+## En el CI (Woodpecker)
+
+El paso va **antes de desplegar**, con la misma imagen que ya tiene `composer`, `pnpm` y
+`python3`:
+
+```yaml
+  - name: revisor-deps
+    image: ci-php-node:8.4
+    pull: false
+    commands:
+      - python3 .ci/revisor-deps.py . --dias 7 --estricto
+```
+
+Va **después** del paso que instala (`composer install` y `pnpm install`): el revisor lee
+lo que hay instalado, no lo instala él. Verificado el 12ago2026: la imagen
+`ci-php-node:8.4` trae Python 3.13.5 en `/usr/bin/python3`.
 
 ## Qué revisa
 
