@@ -20,7 +20,7 @@ Escribo código pensando en quien lo tenga que leer dentro de seis meses.
 
 ### Stack
 
-- **Backend** — Laravel 13 · PHP 8.3 · Filament · PostgreSQL + pgvector · Redis (Valkey)
+- **Backend** — Laravel 13 · PHP 8.5 · Filament · PostgreSQL + pgvector · Redis (Valkey)
 - **Frontend** — Vue 3 · Inertia (SSR) · TypeScript · Tailwind 4 · Pinia
 - **Infra** — Docker · Traefik · FrankenPHP + Octane · RustFS (S3) · Meilisearch · Linux (Arch)
 - **También** — Rust · Go · Python
