@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 454"
+     width="900" height="454" role="img"
+     aria-labelledby="titulo descripcion">
+  <title id="titulo">jemg@jemg.dev</title>
+  <desc id="descripcion">Tarjeta de terminal con el stack de Juan Esteban Manrique Giraldo:
+    Arch Linux, Laravel 13 con PHP 8.5, Vue 3 con Inertia y TypeScript, Docker con Traefik y
+    FrankenPHP, PostgreSQL con pgvector, Valkey y RustFS, las apps os, peer y pearl, y además
+    Rust, Go y Python.</desc>
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+    /* Sin `opacity: 0` de base a propósito: un renderizador que ignore las
+       animaciones CSS debe ver la tarjeta completa, no una vacía. */
+    .px { fill: #c8d1dc; animation: aparecer .28s ease-out both; }
+    .linea { animation: aparecer .3s ease-out both; }
+    .et { fill: #4d9fd6; font-size: 16px; }
+    .vl { fill: #c8d1dc; font-size: 16px; }
+    .pt { stroke: #5c6773; stroke-width: 2; stroke-linecap: round; stroke-dasharray: 0 6; }
+    .prompt { fill: #7ec699; font-size: 15px; }
+    .cmd { fill: #5c6773; font-size: 15px; }
+    .host { fill: #4d9fd6; font-size: 17px; font-weight: 600; }
+    .regla { stroke: #1c222c; stroke-width: 1; }
+    .cursor { fill: #7ec699; animation: latir 1.06s steps(1) infinite; }
+    @keyframes aparecer { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes latir { 0%, 50% { opacity: 1; } 50.01%, 100% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .px, .linea { opacity: 1; animation: none; }
+      .cursor { animation: none; }
+    }
+  </style>
+
+  <rect x="1" y="1" width="898" height="452" rx="12"
+        fill="#0b0e14" stroke="#1c222c"/>
+
+  <text class="prompt" x="48" y="58">~$ <tspan class="cmd">neofetch</tspan></text>
+
+  <g>
+    <rect class="px" x="66" y="214" width="8" height="8" rx="1" style="animation-delay:0.04s"/>
+    <rect class="px" x="75" y="214" width="8" height="8" rx="1" style="animation-delay:0.06s"/>
+    <rect class="px" x="84" y="214" width="8" height="8" rx="1" style="animation-delay:0.08s"/>
+    <rect class="px" x="75" y="223" width="8" height="8" rx="1" style="animation-delay:0.08s"/>
+    <rect class="px" x="75" y="232" width="8" height="8" rx="1" style="animation-delay:0.10s"/>
+    <rect class="px" x="75" y="241" width="8" height="8" rx="1" style="animation-delay:0.12s"/>
+    <rect class="px" x="75" y="250" width="8" height="8" rx="1" style="animation-delay:0.14s"/>
+    <rect class="px" x="48" y="259" width="8" height="8" rx="1" style="animation-delay:0.10s"/>
+    <rect class="px" x="75" y="259" width="8" height="8" rx="1" style="animation-delay:0.16s"/>
+    <rect class="px" x="57" y="268" width="8" height="8" rx="1" style="animation-delay:0.14s"/>
+    <rect class="px" x="66" y="268" width="8" height="8" rx="1" style="animation-delay:0.16s"/>
+    <rect class="px" x="102" y="214" width="8" height="8" rx="1" style="animation-delay:0.10s"/>
+    <rect class="px" x="111" y="214" width="8" height="8" rx="1" style="animation-delay:0.12s"/>
+    <rect class="px" x="120" y="214" width="8" height="8" rx="1" style="animation-delay:0.14s"/>
+    <rect class="px" x="129" y="214" width="8" height="8" rx="1" style="animation-delay:0.16s"/>
+    <rect class="px" x="138" y="214" width="8" height="8" rx="1" style="animation-delay:0.18s"/>
+    <rect class="px" x="102" y="223" width="8" height="8" rx="1" style="animation-delay:0.12s"/>
+    <rect class="px" x="102" y="232" width="8" height="8" rx="1" style="animation-delay:0.14s"/>
+    <rect class="px" x="102" y="241" width="8" height="8" rx="1" style="animation-delay:0.16s"/>
+    <rect class="px" x="111" y="241" width="8" height="8" rx="1" style="animation-delay:0.18s"/>
+    <rect class="px" x="120" y="241" width="8" height="8" rx="1" style="animation-delay:0.20s"/>
+    <rect class="px" x="129" y="241" width="8" height="8" rx="1" style="animation-delay:0.22s"/>
+    <rect class="px" x="102" y="250" width="8" height="8" rx="1" style="animation-delay:0.18s"/>
+    <rect class="px" x="102" y="259" width="8" height="8" rx="1" style="animation-delay:0.20s"/>
+    <rect class="px" x="102" y="268" width="8" height="8" rx="1" style="animation-delay:0.22s"/>
+    <rect class="px" x="111" y="268" width="8" height="8" rx="1" style="animation-delay:0.24s"/>
+    <rect class="px" x="120" y="268" width="8" height="8" rx="1" style="animation-delay:0.26s"/>
+    <rect class="px" x="129" y="268" width="8" height="8" rx="1" style="animation-delay:0.28s"/>
+    <rect class="px" x="138" y="268" width="8" height="8" rx="1" style="animation-delay:0.30s"/>
+    <rect class="px" x="156" y="214" width="8" height="8" rx="1" style="animation-delay:0.20s"/>
+    <rect class="px" x="192" y="214" width="8" height="8" rx="1" style="animation-delay:0.28s"/>
+    <rect class="px" x="156" y="223" width="8" height="8" rx="1" style="animation-delay:0.22s"/>
+    <rect class="px" x="165" y="223" width="8" height="8" rx="1" style="animation-delay:0.24s"/>
+    <rect class="px" x="183" y="223" width="8" height="8" rx="1" style="animation-delay:0.28s"/>
+    <rect class="px" x="192" y="223" width="8" height="8" rx="1" style="animation-delay:0.30s"/>
+    <rect class="px" x="156" y="232" width="8" height="8" rx="1" style="animation-delay:0.24s"/>
+    <rect class="px" x="174" y="232" width="8" height="8" rx="1" style="animation-delay:0.28s"/>
+    <rect class="px" x="192" y="232" width="8" height="8" rx="1" style="animation-delay:0.32s"/>
+    <rect class="px" x="156" y="241" width="8" height="8" rx="1" style="animation-delay:0.26s"/>
+    <rect class="px" x="174" y="241" width="8" height="8" rx="1" style="animation-delay:0.30s"/>
+    <rect class="px" x="192" y="241" width="8" height="8" rx="1" style="animation-delay:0.34s"/>
+    <rect class="px" x="156" y="250" width="8" height="8" rx="1" style="animation-delay:0.28s"/>
+    <rect class="px" x="192" y="250" width="8" height="8" rx="1" style="animation-delay:0.36s"/>
+    <rect class="px" x="156" y="259" width="8" height="8" rx="1" style="animation-delay:0.30s"/>
+    <rect class="px" x="192" y="259" width="8" height="8" rx="1" style="animation-delay:0.38s"/>
+    <rect class="px" x="156" y="268" width="8" height="8" rx="1" style="animation-delay:0.32s"/>
+    <rect class="px" x="192" y="268" width="8" height="8" rx="1" style="animation-delay:0.40s"/>
+    <rect class="px" x="219" y="214" width="8" height="8" rx="1" style="animation-delay:0.32s"/>
+    <rect class="px" x="228" y="214" width="8" height="8" rx="1" style="animation-delay:0.34s"/>
+    <rect class="px" x="237" y="214" width="8" height="8" rx="1" style="animation-delay:0.36s"/>
+    <rect class="px" x="210" y="223" width="8" height="8" rx="1" style="animation-delay:0.32s"/>
+    <rect class="px" x="246" y="223" width="8" height="8" rx="1" style="animation-delay:0.40s"/>
+    <rect class="px" x="210" y="232" width="8" height="8" rx="1" style="animation-delay:0.34s"/>
+    <rect class="px" x="210" y="241" width="8" height="8" rx="1" style="animation-delay:0.36s"/>
+    <rect class="px" x="228" y="241" width="8" height="8" rx="1" style="animation-delay:0.40s"/>
+    <rect class="px" x="237" y="241" width="8" height="8" rx="1" style="animation-delay:0.42s"/>
+    <rect class="px" x="246" y="241" width="8" height="8" rx="1" style="animation-delay:0.44s"/>
+    <rect class="px" x="210" y="250" width="8" height="8" rx="1" style="animation-delay:0.38s"/>
+    <rect class="px" x="246" y="250" width="8" height="8" rx="1" style="animation-delay:0.46s"/>
+    <rect class="px" x="210" y="259" width="8" height="8" rx="1" style="animation-delay:0.40s"/>
+    <rect class="px" x="246" y="259" width="8" height="8" rx="1" style="animation-delay:0.48s"/>
+    <rect class="px" x="219" y="268" width="8" height="8" rx="1" style="animation-delay:0.44s"/>
+    <rect class="px" x="228" y="268" width="8" height="8" rx="1" style="animation-delay:0.46s"/>
+    <rect class="px" x="237" y="268" width="8" height="8" rx="1" style="animation-delay:0.48s"/>
+    <rect class="px" x="246" y="268" width="8" height="8" rx="1" style="animation-delay:0.50s"/>
+  </g>
+
+  <text class="host" x="300" y="120">jemg@jemg.dev</text>
+  <line class="regla" x1="300" y1="136" x2="852" y2="136"/>
+
+  <g>
+    <g class="linea" style="animation-delay:0.55s"><text class="et" x="300" y="176">os</text><line class="pt" x1="366" y1="171" x2="392" y2="171"/><text class="vl" x="404" y="176">Arch Linux</text></g>
+    <g class="linea" style="animation-delay:0.62s"><text class="et" x="300" y="204">shell</text><line class="pt" x1="366" y1="199" x2="392" y2="199"/><text class="vl" x="404" y="204">bash</text></g>
+    <g class="linea" style="animation-delay:0.69s"><text class="et" x="300" y="232">back</text><line class="pt" x1="366" y1="227" x2="392" y2="227"/><text class="vl" x="404" y="232">Laravel 13 · PHP 8.5</text></g>
+    <g class="linea" style="animation-delay:0.76s"><text class="et" x="300" y="260">front</text><line class="pt" x1="366" y1="255" x2="392" y2="255"/><text class="vl" x="404" y="260">Vue 3 · Inertia · TypeScript</text></g>
+    <g class="linea" style="animation-delay:0.83s"><text class="et" x="300" y="288">infra</text><line class="pt" x1="366" y1="283" x2="392" y2="283"/><text class="vl" x="404" y="288">Docker · Traefik · FrankenPHP</text></g>
+    <g class="linea" style="animation-delay:0.90s"><text class="et" x="300" y="316">data</text><line class="pt" x1="366" y1="311" x2="392" y2="311"/><text class="vl" x="404" y="316">PostgreSQL · pgvector · Valkey · RustFS</text></g>
+    <g class="linea" style="animation-delay:0.97s"><text class="et" x="300" y="344">apps</text><line class="pt" x1="366" y1="339" x2="392" y2="339"/><text class="vl" x="404" y="344">os · peer · pearl</text></g>
+    <g class="linea" style="animation-delay:1.04s"><text class="et" x="300" y="372">also</text><line class="pt" x1="366" y1="367" x2="392" y2="367"/><text class="vl" x="404" y="372">Rust · Go · Python</text></g>
+  </g>
+
+  <text class="prompt" x="48" y="424">~$ <tspan class="cursor">█</tspan></text>
+</svg>
