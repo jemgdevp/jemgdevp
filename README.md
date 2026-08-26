@@ -30,15 +30,4 @@ Escribo código pensando en quien lo tenga que leer dentro de seis meses.
 - **Infra** — Docker · Traefik · FrankenPHP + Octane · RustFS (S3) · Woodpecker CI · Linux (Arch)
 - **También** — Rust · Go · Python · servidores MCP
 
-### En qué ando
-
-- Un ecosistema propio de apps self-host bajo `jemg.dev` — piezas pequeñas con una tarea cada
-  una, interconectadas por **MCP** en vez de acopladas entre sí.
-- **Design system propio** en Storybook, no plantillas genéricas: tokens, componentes y sus
-  estados cubiertos por tests.
-- **Datastores compartidos** por la plataforma — un Postgres, un Valkey, un RustFS para todo;
-  cada app aporta su contenedor, no los suyos.
-- Todo feature lleva **test en el mismo commit** y pasa por gates (Pint · Larastan · Pest ·
-  Vitest) antes de tocar `develop`.
-
 <p align="center"><sub>Español (nativo) · Inglés (técnico)</sub></p>
